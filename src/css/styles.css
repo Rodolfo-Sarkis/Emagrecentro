@@ -1,0 +1,234 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+/* Corpo da página */
+body {
+    font-family: "Playfair Display", serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Cabeçalho */
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Seção Hero */
+#hero {
+    background-color: #e0c0b0;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    max-height: 1500px;
+    max-width: 700px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.formação {
+    max-width: 500px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos botão hamburger */
+.menu-toggle {
+    display: none;
+    /* Escondido no desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.menu-toggle .hamburger {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+/* Estilos para menu responsivo */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        width: 100%;
+        display: none;
+        /* Escondido por padrão */
+    }
+
+    nav.active {
+        display: flex;
+        /* mostrar como flex */
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Mostrar botão hamburger no mobile */
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+header nav ul li a:hover {
+    color: #b67a56;
+    /* Cor quando passa o mouse */
+    transition: color 0.3s;
+    /* Suaviza a transição */
+    text-decoration: underline;
+    /* Opcional: sublinha no hover */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    /* Remove sublinhado padrão */
+    color: #333;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    /* Garante que não sublinhe no hover */
+    color: #b67a56;
+    /* Cor no hover (pode ser a que preferir) */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#contato {
+  padding: 40px;
+  text-align: center;
+}
+
+#contato h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.contato-item i {
+  color: #25d366; /* Verde WhatsApp */
+}
+
+.contato-item a {
+  color: #333;         /* Cor do texto que você quiser */
+  text-decoration: none;  /* Remove o sublinhado */
+  font-weight: bold;      /* (Opcional) Deixa o número mais destacado */
+}
+
+.contato-item a:hover {
+  color: #25d366;      /* (Opcional) Cor ao passar o mouse */
+}
+
+.concursos {
+    max-width: 500px;
+}
