@@ -194,6 +194,7 @@ header nav ul li a:hover {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
 #contato {
@@ -231,4 +232,33 @@ header nav ul li a:hover {
 
 .concursos {
     max-width: 500px;
+}
+
+h2 {
+  transition: color 0.3s;
+}
+
+h2:hover {
+  color: #b67a56; /* azul suave no hover */
+}
+
+p {
+  transition: color 0.3s;
+}
+
+p:hover {
+  color: #b67a56; /* cinza escuro no hover */
+}
+
+.subtitulo {
+    color: #444;
+    font-size: 22px;
+}
+
+span {
+    transition: color 0.3s;
+}
+
+span:hover {
+    color: #b67a56
 }
